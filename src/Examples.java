@@ -181,6 +181,91 @@ public class Examples {
        System.out.println("Ile jest słów: "+(count+1));
 
 
+        System.out.println("----------- gwiazdki 1 ----------");
+       /* ***********************  gwiazdki  ****************** */
 
+        // dla n = 4
+       /*
+
+       * * * *
+        * * *
+       * * * *
+        * * *
+
+        */
+
+        int n = 10;
+
+        i = 0;
+        while(i < n){
+            System.out.print("* ");
+            i++;
+        }
+
+        System.out.println();
+
+        i = 0;
+        while(i < n-1){
+            System.out.print(" *");
+            i++;
+        }
+
+        System.out.println();
+
+        i = 0;
+        while(i < n){
+            System.out.print("* ");
+            i++;
+        }
+
+        System.out.println();
+
+        i = 0;
+        while(i < n-1){
+            System.out.print(" *");
+            i++;
+        }
+
+        System.out.println();
+
+        System.out.println("----------- gwiazdki 2 ----------");
+        int j = 0;
+        while(j < n) {
+            // jeżeli pażysta
+            i = 0;
+            if(j%2 == 0) {
+                while (i < n) {
+                    System.out.print("* ");
+                    i++;
+                }
+            } else {
+                // jeżeli nieparzysta
+                while (i < n - 1) {
+                    System.out.print(" *");
+                    i++;
+                }
+            }
+
+            System.out.println();
+            j++;
+        }
+
+
+        System.out.println("----------- gwiazdki 3 ----------");
+        j = 0;
+        while(j < n) {
+            // jeżeli pażysta
+            i = 0;
+            while(i < (n*2-(j%2+1))) {
+                if (((j+1)*(n*2)+(i+1)+(j%2)) % 2 == 0) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+                i++;
+            }
+            System.out.println();
+            j++;
+        }
     }
 }
