@@ -130,6 +130,7 @@ public class Examples {
 
         char[][] crossword2 = {{'a','l','i','c','j','a'}, {'m','a','r','e','k'}, {'o','l','a'}, {'j','u','r','e','k'}};
 
+
         k = 0;
         while(k < crossword2.length) { // liczba wierszy
             z = 0;
@@ -140,5 +141,46 @@ public class Examples {
             k++;
             System.out.println();
         }
+
+        System.out.println("--------------- ile słów ------------------");
+
+        // znajdź ile jest słów w  tym zdaniu, każe słowo jest oddzielone |
+        char[] words = {'a','l','i','c','j','a','|','j','u','r','e','k','|','s','t','e','f','a','n','|','k','a','s','i','a'};
+
+
+
+
+        /*
+        System.out.println(words[0]);
+        System.out.println(words[1]);
+        System.out.println(words[2]);
+        System.out.println(words[3]);
+        */
+
+        // wyświetl wszystkie elementy
+        i = 0;
+        while(i < words.length){ // 19 to długością talibcy jednowymiarowej
+            System.out.println(words[i]);
+            i++;
+        }
+
+        // ile jest kresek ?
+        int count = 0;
+        i = 0;
+        while(i < words.length){
+            // jeżeli znajdziesz kreskę
+            if(words[i] == '|'){
+                count++; // to dodaj 1 do count
+            }
+            i++;
+        }
+        System.out.println("Ile jest kresek: "+count);
+
+        // liczba kresek +1, to liczba słów
+
+       System.out.println("Ile jest słów: "+(count+1));
+
+
+
     }
 }
