@@ -11,7 +11,7 @@ public class Examples {
          */
 
         int i = 1;
-        while(i <= 20) {
+        while (i <= 20) {
             System.out.println("Witaj!");
             i++;
         }
@@ -40,7 +40,7 @@ public class Examples {
 //        crossword[1] = new char[6];
 //        crossword[2] = new char[4];
 
-        char[][]crossword = {{'a','l','a'}, {'m','a','r','c','i','n'}, {'m','a','j','a'}};
+        char[][] crossword = {{'a', 'l', 'a'}, {'m', 'a', 'r', 'c', 'i', 'n'}, {'m', 'a', 'j', 'a'}};
 
         System.out.print(crossword[0][0]);
         System.out.print(crossword[0][1]);
@@ -49,9 +49,9 @@ public class Examples {
         System.out.println();
 
         int z = 0;
-        while(z < 3){
+        while (z < 3) {
             System.out.print(crossword[0][z]);
-            z = z+1;
+            z = z + 1;
         }
 
         System.out.println();
@@ -67,7 +67,7 @@ public class Examples {
         System.out.println();
 
         z = 0;
-        while(z<6){
+        while (z < 6) {
             System.out.print(crossword[1][z]);
             z++;
         }
@@ -82,7 +82,7 @@ public class Examples {
         System.out.println();
 
         z = 0;
-        while(z < 4){
+        while (z < 4) {
             System.out.print(crossword[2][z]);
             z++;
         }
@@ -90,24 +90,23 @@ public class Examples {
         System.out.println();
 
 
-
         /********************************************/
         z = 0;
-        while(z < crossword[0].length){ // liczba kolumn, długość wiersza 1
+        while (z < crossword[0].length) { // liczba kolumn, długość wiersza 1
             System.out.print(crossword[0][z]);
             z++;
         }
 
 
         z = 0;
-        while(z < crossword[1].length){ // liczba kolumn, długość wiersza 2
+        while (z < crossword[1].length) { // liczba kolumn, długość wiersza 2
             System.out.print(crossword[1][z]);
             z++;
         }
 
 
         z = 0;
-        while(z < crossword[2].length){ // liczba kolumn, długość wiersza 3
+        while (z < crossword[2].length) { // liczba kolumn, długość wiersza 3
             System.out.print(crossword[2][z]);
             z++;
         }
@@ -116,7 +115,7 @@ public class Examples {
 
         /***************************************************/
         int k = 0;
-        while(k < crossword.length) { // liczba wierszy
+        while (k < crossword.length) { // liczba wierszy
             z = 0;
             while (z < crossword[k].length) {
                 System.out.print(crossword[k][z]);
@@ -128,11 +127,11 @@ public class Examples {
 
         System.out.println("--------------- crossword2 ------------------");
 
-        char[][] crossword2 = {{'a','l','i','c','j','a'}, {'m','a','r','e','k'}, {'o','l','a'}, {'j','u','r','e','k'}};
+        char[][] crossword2 = {{'a', 'l', 'i', 'c', 'j', 'a'}, {'m', 'a', 'r', 'e', 'k'}, {'o', 'l', 'a'}, {'j', 'u', 'r', 'e', 'k'}};
 
 
         k = 0;
-        while(k < crossword2.length) { // liczba wierszy
+        while (k < crossword2.length) { // liczba wierszy
             z = 0;
             while (z < crossword2[k].length) {
                 System.out.print(crossword2[k][z]);
@@ -145,7 +144,7 @@ public class Examples {
         System.out.println("--------------- ile słów ------------------");
 
         // znajdź ile jest słów w  tym zdaniu, każe słowo jest oddzielone |
-        char[] words = {'a','l','i','c','j','a','|','j','u','r','e','k','|','s','t','e','f','a','n','|','k','a','s','i','a'};
+        char[] words = {'a', 'l', 'i', 'c', 'j', 'a', '|', 'j', 'u', 'r', 'e', 'k', '|', 's', 't', 'e', 'f', 'a', 'n', '|', 'k', 'a', 's', 'i', 'a'};
 
 
 
@@ -159,7 +158,7 @@ public class Examples {
 
         // wyświetl wszystkie elementy
         i = 0;
-        while(i < words.length){ // 19 to długością talibcy jednowymiarowej
+        while (i < words.length) { // 19 to długością talibcy jednowymiarowej
             System.out.println(words[i]);
             i++;
         }
@@ -167,37 +166,37 @@ public class Examples {
         // ile jest kresek ?
         int count = 0;
         i = 0;
-        while(i < words.length){
+        while (i < words.length) {
             // jeżeli znajdziesz kreskę
-            if(words[i] == '|'){
+            if (words[i] == '|') {
                 count++; // to dodaj 1 do count
             }
             i++;
         }
-        System.out.println("Ile jest kresek: "+count);
+        System.out.println("Ile jest kresek: " + count);
 
         // liczba kresek +1, to liczba słów
 
-       System.out.println("Ile jest słów: "+(count+1));
+        System.out.println("Ile jest słów: " + (count + 1));
 
 
         System.out.println("----------- gwiazdki 1 ----------");
-       /* ***********************  gwiazdki  ****************** */
+        /* ***********************  gwiazdki  ****************** */
 
         // dla n = 4
-       /*
+        /*
 
-       * * * *
-        * * *
-       * * * *
-        * * *
+         * * * *
+         * * *
+         * * * *
+         * * *
 
-        */
+         */
 
         int n = 10;
 
         i = 0;
-        while(i < n){
+        while (i < n) {
             System.out.print("* ");
             i++;
         }
@@ -205,7 +204,7 @@ public class Examples {
         System.out.println();
 
         i = 0;
-        while(i < n-1){
+        while (i < n - 1) {
             System.out.print(" *");
             i++;
         }
@@ -213,7 +212,7 @@ public class Examples {
         System.out.println();
 
         i = 0;
-        while(i < n){
+        while (i < n) {
             System.out.print("* ");
             i++;
         }
@@ -221,7 +220,7 @@ public class Examples {
         System.out.println();
 
         i = 0;
-        while(i < n-1){
+        while (i < n - 1) {
             System.out.print(" *");
             i++;
         }
@@ -230,10 +229,10 @@ public class Examples {
 
         System.out.println("----------- gwiazdki 2 ----------");
         int j = 0;
-        while(j < n) {
+        while (j < n) {
             // jeżeli pażysta
             i = 0;
-            if(j%2 == 0) {
+            if (j % 2 == 0) {
                 while (i < n) {
                     System.out.print("* ");
                     i++;
@@ -253,11 +252,11 @@ public class Examples {
 
         System.out.println("----------- gwiazdki 3 ----------");
         j = 0;
-        while(j < n) {
+        while (j < n) {
             // jeżeli pażysta
             i = 0;
-            while(i < (n*2-(j%2+1))) {
-                if (((j+1)*(n*2)+(i+1)+(j%2)) % 2 == 0) {
+            while (i < (n * 2 - (j % 2 + 1))) {
+                if (((j + 1) * (n * 2) + (i + 1) + (j % 2)) % 2 == 0) {
                     System.out.print(" ");
                 } else {
                     System.out.print("*");
@@ -267,5 +266,102 @@ public class Examples {
             System.out.println();
             j++;
         }
+
+        System.out.println(" -------------- zadanie ze znakami ----------------- ");
+        int row = 3;
+        int col = 10;
+
+        char[][] chars = new char[row][col];
+
+
+        // wyświetlenie tablicy dwuwymiarowej
+        i = 0;
+        while (i < chars.length) {
+            // przejść przez kolumny tego wiersza
+            j = 0;
+            while (j < chars[i].length) {
+                System.out.print(chars[i][j]);
+                j++;
+            }
+            System.out.println();
+            // koniec przechodzenia przez kolumny
+
+            i++;
+        }
+
+
+        // wypełnienie tablicy znakami od a do z
+        i = 0;
+        int a = 97;
+        while (i < chars.length) {
+            // przejść przez kolumny tego wiersza
+            j = 0;
+            while (j < chars[i].length) {
+                if (a >= 123) {
+                    a = 97;
+                }
+                chars[i][j] = (char) a;
+                j++;
+                a++;
+            }
+            // koniec przechodzenia przez kolumny
+
+            i++;
+        }
+
+
+        /*
+        // co piatą zamień na dużą literę - podejście 1
+        i = 0;
+        int l = 1;
+        while (i < chars.length) {
+            // przejść przez kolumny tego wiersza
+            j = 0;
+            while (j < chars[i].length) {
+                // warunki
+                if (l % 5 == 0) {
+                    chars[i][j] = (char)(chars[i][j]-32);
+                }
+                l++;
+                j++;
+            }
+            System.out.println();
+            // koniec przechodzenia przez kolumny
+
+            i++;
+        }*/
+
+        // co piatą zamień na dużą literę - podejście 2
+        i = 0;
+        while (i < chars.length) {
+            // przejść przez kolumny tego wiersza
+            j = 4;
+            while (j < chars[i].length) {
+                chars[i][j] = (char)(chars[i][j]-32);
+                j+=5;
+            }
+            System.out.println();
+            // koniec przechodzenia przez kolumny
+
+            i++;
+        }
+
+
+        // wyświetlenie tablicy dwuwymiarowej
+        i = 0;
+        while (i < chars.length) {
+            // przejść przez kolumny tego wiersza
+            j = 0;
+            while (j < chars[i].length) {
+                System.out.print(chars[i][j]);
+                j++;
+            }
+            System.out.println();
+            // koniec przechodzenia przez kolumny
+
+            i++;
+        }
+
+
     }
 }
